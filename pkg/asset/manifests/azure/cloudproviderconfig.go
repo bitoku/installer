@@ -62,6 +62,7 @@ func (params CloudProviderConfig) JSON() (string, error) {
 		// https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-reset
 		LoadBalancerSku:             "standard",
 		ExcludeMasterFromStandardLB: &excludeMasterFromStandardLB,
+		VMType:                      "standard",
 	}
 
 	if params.ARO {
